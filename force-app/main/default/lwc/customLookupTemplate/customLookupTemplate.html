@@ -1,0 +1,16 @@
+<template>
+    <div class="slds-grid slds-grid_vertical-align-center">
+        <lightning-input
+            value={value}
+            onchange={handleInputChange}
+            placeholder="Type account name"
+            class="slds-grow">
+        </lightning-input>
+
+        <lightning-button-icon
+            icon-name="utility:search"
+            alternative-text="Search"
+            onclick={handleIconClick}>
+        </lightning-button-icon>
+    </div>
+</template>

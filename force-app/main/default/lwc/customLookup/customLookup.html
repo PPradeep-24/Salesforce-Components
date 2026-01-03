@@ -1,0 +1,34 @@
+<template>
+    <div class="lookup-wrapper">
+        <!-- <lightning-record-edit-form object-api-name="Contact">
+            <lightning-input-field field-name="AccountId" value={accountName}></lightning-input-field>
+        </lightning-record-edit-form> -->
+       
+         <div class="editable-container" onmouseover={showIcon} onmouseout={hideIcon}>
+        <lightning-input 
+            label=""
+            value={accountName}
+            disabled={isDisabled}
+            class="editable-input"
+            onchange={handleChange}
+            onblur={handleBlur}>
+        </lightning-input>
+
+        <lightning-button-icon 
+            icon-name="utility:edit"
+            alternative-text="Edit"
+            class={iconClass}
+            onclick={handleEditClick}>
+        </lightning-button-icon>
+    </div>
+     <lightning-icon
+            icon-name="utility:search"
+            size="x-small"
+            class={searchicon}
+            title="Select Account"
+            onclick={handleIconClick}>
+        </lightning-icon>
+
+
+    </div>
+</template>

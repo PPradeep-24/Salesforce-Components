@@ -1,0 +1,50 @@
+.lookup-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #dcdcdc;
+    border-radius: 6px;
+    padding: 0.25rem 0.5rem;
+    background-color: #fafafa;
+}
+
+.account-name {
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.lookup-icon {
+    margin-left: 0.4rem;
+    cursor: pointer;
+    --slds-c-icon-color-foreground-default: #0176d3;
+    transition: transform 0.15s ease;
+}
+
+.lookup-icon:hover {
+    transform: scale(1.2);
+}
+
+.editable-container {
+    position: relative;
+    display: inline-block;
+    width: 250px;
+}
+
+.editable-input {
+    width: 100%;
+}
+
+lightning-button-icon {
+    position: absolute;
+    right: 5px;
+    top: 30%;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.hidden-icon {
+    opacity: 0;
+    pointer-events: none;
+}
+

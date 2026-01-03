@@ -1,0 +1,22 @@
+.account-list {
+    margin-top: 1rem;
+    list-style: none;
+    padding: 0;
+}
+
+.account-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+
+.account-item:hover {
+    background-color: #f3f3f3;
+}
+
+.close-btn {
+    float: right;
+}
